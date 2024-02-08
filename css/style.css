@@ -11,17 +11,16 @@ body{
     font-family: 'Open sans', sans-serif;
     box-sizing: border-box;
     display: flex;
+    background: rgb(255, 255, 255);
 }
 nav{
     width: 400px;
     height: 100vh;
-    background: rgb(67, 102, 94);
-    box-shadow: 1px 1px 5px grey;
-    filter: drop-shadow(5px 5px 5px grey);
+    background: rgb(255, 255, 255);
 }
 
 nav .links:hover{
-    background: rgb(127, 165, 122);
+    background: rgb(122, 162, 165);
     
 }
 nav .boxCart h2:hover{
@@ -97,4 +96,116 @@ nav .boxCart h2:hover{
     align-items: center;
     width: 100%;
     height: 10%;
+}
+
+
+.mainDisplay{
+    width: calc(100% - 400px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainView{
+    background: rgb(245, 245, 245);
+    width: 100%;
+    height: 80%;
+    border-radius: 50px;
+    padding: 1.5rem;
+    box-shadow: 8px  8px 30px rgb(122, 162, 165);
+
+
+
+}
+
+.productTtile{
+    width: 10%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.productTtile h2{
+    font-size: clamp(1rem, 3vw, 2.7);
+    width: 100%;
+}
+
+.products{
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0.95fr));
+    gap: 1.5rem;
+    overflow-y: scroll;
+}
+
+.product{
+    width: 100%;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.productImage{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.productImage img{
+    width: 300px;
+    height: 100%;
+}
+
+.productDescription{
+    box-shadow: 5px 5px 15px grey;
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.productName{
+    grid-area: 1/1/2/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.productName h3{
+    font-size: clamp(1.5rem, 1.7vw, 1.8rem);
+    padding-left: 1rem;
+    
+}
+.order{
+    grid-area: 2/1/3/3  ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.productPrice{
+    display: flex;
+    align-items: center;
+}
+.productPrice p{
+    font-size: 1.5rem;
+}
+
+.boton{
+    background: rgb(204, 204, 0);
+    border: none;
+    width: 100px;
+    height: 80%;
+    border-radius: 50px;
+}
+.boton:hover{
+    background: rgb(255, 255, 0);
 }
