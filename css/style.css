@@ -6,3 +6,95 @@
     margin: 0;
 }
 /* first desktop */
+
+body{
+    font-family: 'Open sans', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+}
+nav{
+    width: 400px;
+    height: 100vh;
+    background: rgb(67, 102, 94);
+    box-shadow: 1px 1px 5px grey;
+    filter: drop-shadow(5px 5px 5px grey);
+}
+
+nav .links:hover{
+    background: rgb(127, 165, 122);
+    
+}
+nav .boxCart h2:hover{
+    color: rgb(255, 217, 0);
+}
+
+
+.pageTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageTitle h2{
+    font-size:  2.7rem;
+    font-weight: 100;
+}
+
+.linksProducts{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    border-radius: 50px;
+}
+.links h2 a{
+    color: rgb(49, 49, 49);
+    font-size: 1.3rem;
+    font-weight: 50;
+    text-decoration: none;
+}
+.icon{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bx-chevron-right{
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    z-index: 50;
+}
+.boxCart{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.boxCart h2{
+    font-weight: 150;
+    font-size: 1.5rem;
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
